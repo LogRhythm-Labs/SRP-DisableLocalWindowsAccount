@@ -1,8 +1,8 @@
 #==========================================#
-# LogRhythm Threat Research	               #
-# Carbon Black - SmartResponse             #
+# LogRhythm Threat Research                #
+# DisableLocalWindowsAccount - SRP         #
 # matt . willems @ logrhythm . com         #
-# v0.1  --  April, 2016     	           #
+# v0.1  --  April, 2016                    #
 #==========================================#
 
 # Copyright 2016 LogRhythm Inc.   
@@ -51,8 +51,8 @@ Write-Host "Local account $TargetAccount disabled on $TargetHost"
 # SIG # Begin signature block
 # MIIdxgYJKoZIhvcNAQcCoIIdtzCCHbMCAQExCzAJBgUrDgMCGgUAMGkGCisGAQQB
 # gjcCAQSgWzBZMDQGCisGAQQBgjcCAR4wJgIDAQAABBAfzDtgWUsITrck0sYpfvNR
-# AgEAAgEAAgEAAgEAAgEAMCEwCQYFKw4DAhoFAAQUf9A1iOcymlmTRDpSazNSmcjm
-# Beygghi2MIID7jCCA1egAwIBAgIQfpPr+3zGTlnqS5p31Ab8OzANBgkqhkiG9w0B
+# AgEAAgEAAgEAAgEAAgEAMCEwCQYFKw4DAhoFAAQUrty6XyMRd4oXZpez6IKugdBZ
+# 73Kgghi2MIID7jCCA1egAwIBAgIQfpPr+3zGTlnqS5p31Ab8OzANBgkqhkiG9w0B
 # AQUFADCBizELMAkGA1UEBhMCWkExFTATBgNVBAgTDFdlc3Rlcm4gQ2FwZTEUMBIG
 # A1UEBxMLRHVyYmFudmlsbGUxDzANBgNVBAoTBlRoYXd0ZTEdMBsGA1UECxMUVGhh
 # d3RlIENlcnRpZmljYXRpb24xHzAdBgNVBAMTFlRoYXd0ZSBUaW1lc3RhbXBpbmcg
@@ -190,22 +190,22 @@ Write-Host "Local account $TargetAccount disabled on $TargetHost"
 # MDEuMCwGA1UEAxMlVmVyaVNpZ24gQ2xhc3MgMyBDb2RlIFNpZ25pbmcgMjAxMCBD
 # QQIQb86k4QlOrKAuOolBFzl1RTAJBgUrDgMCGgUAoHgwGAYKKwYBBAGCNwIBDDEK
 # MAigAoAAoQKAADAZBgkqhkiG9w0BCQMxDAYKKwYBBAGCNwIBBDAcBgorBgEEAYI3
-# AgELMQ4wDAYKKwYBBAGCNwIBFTAjBgkqhkiG9w0BCQQxFgQUtRa5Fzq6r6+PoZ3R
-# mqMdzSNYbEowDQYJKoZIhvcNAQEBBQAEggEAhVpzT+TRtRgG7StwgqooVc7R8a6M
-# z98QWJJTfGojfjz+gj9+iC19g7PLts1z/SXUR5WRRq4jdSleMpxdciI5CIji6qP/
-# co6t8qvYh91kGDOKxs6vAz4ufg2S/kdwoCVMwR/llRK9Y3BM6ncDdFmXN7rXaIXg
-# WvIDAUh0upE1i97HkpzcpeAX0Qvc/l2sZgvzcAIf2gs/uUiKY6WhpUgB6KRtanWQ
-# mHW+whISCRpVPxA/6y+LJizIGWuMrRPUyIa4SRsziymOmowJvlMjySDbGcCgY4c7
-# A64zuMM1NuXVVLPPhcl2T4F/k2XxzHTlkPNTCWibmqdSxCScGeChTdxUSKGCAgsw
+# AgELMQ4wDAYKKwYBBAGCNwIBFTAjBgkqhkiG9w0BCQQxFgQUAFyi28dx+9D5xh2O
+# z5rzSAE+NpMwDQYJKoZIhvcNAQEBBQAEggEABW7ckHh1PGhudfdK08G7CJ488y2y
+# 0OgC07TeAHAYUBwqJ3VUDXKx7PdK6CwhlNE8wyewyTeNfgebPBfLbA6vL5wARnLb
+# syFp24ZTlEQPbvwGL2J1Te7WkZ4AmLr1o6frK6OzcsBgFH4zpkn3nfjecZJ98Xad
+# 0NH/28jm9Y78vwNecxbSKDN0gcY3jDH5yWLADvfZ1jLGGu7bm8i93ju+JQZLIQUA
+# V9qSyZf1LTdfmSSDZJM0Dyni8F+k/42NEHS37kSLyDSKbfpmtFCBS5GWj4bHhptG
+# HKu3B0LvR1FdAk8ctoirITqwCoSQHfNHXsu6AC6K6PodSXoHJBfELcvNuKGCAgsw
 # ggIHBgkqhkiG9w0BCQYxggH4MIIB9AIBATByMF4xCzAJBgNVBAYTAlVTMR0wGwYD
 # VQQKExRTeW1hbnRlYyBDb3Jwb3JhdGlvbjEwMC4GA1UEAxMnU3ltYW50ZWMgVGlt
 # ZSBTdGFtcGluZyBTZXJ2aWNlcyBDQSAtIEcyAhAOz/Q4yP6/NW4E2GqYGxpQMAkG
 # BSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJ
-# BTEPFw0xNzAyMDMyMjA5NTdaMCMGCSqGSIb3DQEJBDEWBBTu0nE6HCM5O0tYRxT2
-# Sz21CaflODANBgkqhkiG9w0BAQEFAASCAQBjOfl+vXEEDKHDFkBNGu6Pa6INPZsf
-# Lnafb7YpqyjCP+aOqWAtYNgCLecVz4IoitgpkJ4s11C2vUVHWdEZtTXb4TK6HwC2
-# RCENdx7Dqaw+/A7+07hjfrfibtKiE8gGNWyhWoN5X8xjDvm2lYGcyosOEdz5GPkj
-# 9oE3YTMhGIksWD6iq2fEyzU78rMLF2gpdnactuLR+zpKDBTdhmJJtfPeNMKwvo4t
-# 5oCczYw5+pZ9PYCLXjHl5JWvI47hw57vglLBYh2ARvMI99SatPobpoZpr1YPrQ5B
-# TZS8pU1DsA9/SjxVZ3yyqynDAB/m8KiA86jt4f0G2OCTFsE/i4OvelEi
+# BTEPFw0xNzAzMTQyMTQxMDVaMCMGCSqGSIb3DQEJBDEWBBRJnlCAudbhFDligOEa
+# YCjmHOpSZjANBgkqhkiG9w0BAQEFAASCAQBDBePqQuI630Lzlkfl/tyD0uy3Ua6g
+# WIlnqKBk9OkmoS4TrxXsct/AR2gq8cnCqf6WuP9uAi6j75hJM/wBBBeQLLSb0aap
+# X8UxNTNuz6n6l7d1Wc1Qfqf0rdRQs+7NEa/VrmFkIWQwO6zjmhNkWpcyC63XoDqj
+# 9rXkQz7b6C08wE1XqUTUKX1BbboWRYraBnUDs6vp1x4OLbGmgEgvbwTPAci8vmeO
+# /SvomRTaHEzuIVkvUxjtphC70fnookgjoyVx7vYm5Th6g9ifRkjpRPRmk0StBG10
+# rKp7YeImDZDSrmCtGv1/vH3+tqYSaCcOvTlT8q5Ot/6kS9wrvGPsglse
 # SIG # End signature block
